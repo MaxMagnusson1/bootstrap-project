@@ -1,27 +1,29 @@
+import React from 'react';
 import './App.css';
-import { Component } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import RentForm from './components/RentForm';
+import AdminOverview from './components/AdminOverview';
 
-class App extends Component {
-	state = {
-		message: "If spring backend is running and database is running, then this message should be replaced!"
-	};
-	async componentDidMount() {
-		await this.getHelloWorld();
-	}
-	async getHelloWorld() {
-		const response           = await fetch('/helloworld');
-		const helloWorldResponse = await response.json();
-		this.setState({ message: helloWorldResponse.message });
-	}
-	render() {
-		return (
-			<div className="App">
-				<p>
-					{this.state.message}
-				</p>
-			</div>
-		);
-	}
+/**
+ * App component sets up the main routing for the application.
+ * @component
+ * @returns {JSX.Element}
+ */
+class App extends React.Component {
+    render() {
+        return (
+            <Router>
+                <Routes>
+                    
+                    <Route path="/rent" element={<RentForm />} />
+                    
+                    <Route path="/admin" element={<AdminOverview />} />
+                    
+                    <Route path="*" element={<div>404 Not Found</div>} />
+                </Routes>
+            </Router>
+        );
+    }
 }
 
 export default App;

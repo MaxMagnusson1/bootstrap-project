@@ -26,3 +26,6 @@ See `package.json` for npm commands. The `package.json` has a proxy for the back
 
 Start the frontend by doing `npm install` followed by `npm start` in the `frontend` folder
 
+
+
+

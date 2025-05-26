@@ -1,0 +1,24 @@
+.admin-table {
+  width: 100%;
+  max-width: 1200px;
+  border-collapse: collapse;
+  margin: 2rem auto 0 auto; 
+  background: #fff;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ccc;
+  padding: 0.7rem 1rem;
+  text-align: left;
+
+}
+
+.admin-table th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+.admin-header {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 50px;
+}

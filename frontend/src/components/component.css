@@ -1,0 +1,105 @@
+.car-select-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto); 
+  column-gap: 36px;  
+  row-gap: 16px;   
+  justify-content: start;
+  margin: 18px 0;
+}
+
+.car-option {
+  background: #fafafa;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px 24px;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+  text-align: center;
+  font-size: 1rem;
+  user-select: none;
+  width: 260px;
+}
+
+.car-option.selected {
+  background: #007533;
+  color: white;
+}
+
+.kalender{ 
+    background-color: #fafafa;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-top: 5px;
+}
+
+.custom-selected-date {
+  background-color: #007533 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.booking-summary {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem 1rem 1rem 1rem; 
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 400px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  border: 1px solid black;
+  margin-top: 170px;
+
+}
+
+.booking-summary h3 {
+  margin-top: 0.2rem;  
+  margin-bottom: 1.5rem; 
+}
+
+.booking-summary p {
+  margin: 1.1rem 0;    
+  line-height: 1.2;    
+}
+
+.booking-summary .not-selected {
+  color: #aaa;
+}
+
+input.name_input,
+input.personnummer_input {
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    background: #fff;
+    transition: border 0.2s;
+    width: 290px;
+
+}
+
+input.name_input:focus,
+input.personnummer_input:focus {
+    border: 2.5px solid black; 
+}
+
+
+label.name_input,
+label.personnummer_input {
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    display: block;
+    
+}
+
+.custom-selected-date {
+  background: #007533 !important;
+  color: #fff !important;
+  border-radius: 50%;
+}
+.custom-booked-date {
+  background: #ffdddd !important;
+  color: #b30000 !important;
+  border-radius: 50%;
+  pointer-events: none;
+}

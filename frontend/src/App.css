@@ -1,3 +1,134 @@
-.App {
-	text-align: center;
+
+body {
+    background-color: #F5F5F5 ; 
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003824; 
+    
+}
+
+.header-text {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.selected-car {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.date-section {
+  text-align: left;
+  max-width: 350px;
+}
+
+.date-pickers-row {
+  display: flex;
+  gap: 32px;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.date-pickers-row label {
+  font-weight: bold !important;
+}
+
+label.name_input {
+  font-weight: bold;
+}
+
+
+.error {
+
+    display: flex;
+    justify-content: flex-start;
+    color: red;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.booking-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    transition: background 0.2s, cursor 0.2s;
+}
+
+.booking-button.enabled {
+    background-color: #007533;
+    cursor: pointer;
+    border: 2px solid black;
+
+}
+
+.booking-button.disabled {
+    background-color: gray;
+}
+#error {
+  margin-left: 4rem; 
+}
+
+
+.main-layout {
+    display: flex;
+    align-items: stretch;   
+    gap: 32px;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.summary-section {
+    padding: 2rem;
+    min-width: 340px;
+    max-width: 400px;
+    margin-top:55px;
+
+}
+.form-section {
+    flex: 1;
+}
+.car-text{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0;
+    margin-top: 0;
+}
+
+.name-personnummer-row {
+  display: flex;
+  gap: 25px; 
+  align-items: flex-start; 
+}
+
+.name-personnummer-row > * {
+  flex: 1 1 0;
+}
+
+.datepicker-past {
+  color: #aaa !important;
+  background: #f5f5f5 !important;
+}
+
+.datepicker-unavailable {
+  background: #ffdddd !important;
+  color: #b30000 !important;
+  border-radius: 50%;
+}
+
+.datepicker-selected {
+  background: #007533 !important;
+  color: #fff !important;
+  border-radius: 50%;
 }
