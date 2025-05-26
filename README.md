@@ -12,12 +12,12 @@
 7. Run this command
    - docker exec "-it rental-postgres psql -U my_user -d rental" (if password is needed anywhere in this process its: "password123" (right click in the terminal to paste)
 8. You should now be inside the container, then run the following commands
-    "CREATE TABLE car (
+   - "CREATE TABLE car (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     price_per_day INTEGER NOT NULL
 );"
-  "CREATE TABLE rental (
+-  "CREATE TABLE rental (
     id SERIAL PRIMARY KEY,
     car_id INTEGER REFERENCES car(id),
     driver_name VARCHAR(100) NOT NULL,
@@ -26,7 +26,7 @@
     to_date DATE NOT NULL,
     revenue INTEGER
 );"
-"INSERT INTO car (name, price_per_day) VALUES
+- "INSERT INTO car (name, price_per_day) VALUES
 ('Volvo S60', 1500),
 ('Volkswagen Golf', 1333),
 ('Ford Mustang', 3000),
