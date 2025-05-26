@@ -1,3 +1,9 @@
+Hello! This is Max Magnussonthe instructions to boot up this project!
+1. Make sure docker is installed on your computer 
+
+
+
+
 # Car Rental bootstrap project
 
 This minimal bootstrap project contains a React UI and a backend powered by Spring, connected to a PostgreSQL database.
