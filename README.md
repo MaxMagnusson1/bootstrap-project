@@ -2,11 +2,11 @@
 1. Make sure docker desktop is installed on your computer
 2. To start the project, download the zip file and open it in your code editor
 3. To start frontend run theese commands in the terminal
-   - "cd frontend"
-   - "npm install"
-   - "npm start"
+- "cd frontend"
+- "npm install"
+- "npm start"
 4. To start backend. Make sure you are in the root file, then run this command:
-   - "./mvnw spring-boot:run"
+- "./mvnw spring-boot:run"
 5. Frontend should now be running on localhost:3000/rent and localhost:3000/admin
 6. Unfortunately the tables for the database are not created automatically. To create them, choose the rental-postgres container in dockerdesktop and start it
 7. Run this command
